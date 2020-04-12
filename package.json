@@ -12,10 +12,11 @@
     "react-scripts": "3.4.1"
   },
   "scripts": {
+    "poststart": "npm prune --production",
     "start": "node backend/server.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=true npm install npm && run build"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "eslintConfig": {
     "extends": "react-app"
