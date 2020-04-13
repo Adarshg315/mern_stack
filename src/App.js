@@ -6,7 +6,7 @@ const App = () => {
     const [username, setUsername] = useState('')
     const [email, setEmail] = useState('')
     useEffect(() => {
-        axios.get('api/users')
+        axios.get('../api/users')
             .then(users => setUsers(users))
             .catch(err => console.log(err))
     }, [])
@@ -20,7 +20,7 @@ const App = () => {
             alert('Please fill the email field');
             return;
         }
-        axios.post('/api/users', {
+        axios.post('../api/users', {
             username: username,
             email: email
         })
