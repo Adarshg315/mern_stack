@@ -34,21 +34,6 @@ const App = () => {
     return (
       <>
           <h1>My Project</h1>
-            {/* users === null ? ( <p>Loading...</p>) :
-             (users.length === 0 ? (<p>No user available</p>) : (
-                  <h2>Available Users</h2>
-                  <ol>
-                      users.map((user, index) => (
-                          <li key={index}>
-                              Name: {user.name} - Email: {user.email}
-                          </li>
-                      ))
-                  </ol>
-          <form onSubmit={submitForm}>
-              <input type='text' placeholder='Enter your username'/>
-              <input type='text' placeholder='Enter your email address'/>
-              <input type='submit'/>
-          </form> */}
       </>
   )
 }
