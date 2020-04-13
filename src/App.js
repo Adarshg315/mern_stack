@@ -34,7 +34,7 @@ const App = () => {
     return (
       <>
           <h1>My Project</h1>
-            users === null ? ( <p>Loading...</p>) :
+            {/* users === null ? ( <p>Loading...</p>) :
              (users.length === 0 ? (<p>No user available</p>) : (
                   <h2>Available Users</h2>
                   <ol>
@@ -48,7 +48,7 @@ const App = () => {
               <input type='text' placeholder='Enter your username'/>
               <input type='text' placeholder='Enter your email address'/>
               <input type='submit'/>
-          </form>
+          </form> */}
       </>
   )
 }
