@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router()
-const User = require('../models/User');
+const User = require('../models/user');
 
 router.get('/', (req, res) => {
     User.find()
@@ -10,7 +10,8 @@ router.get('/', (req, res) => {
 router.post('/', (req, res) => {
     const { name, email } = req.body;
     const newUser = new User({
-        name: name, email: email
+        name: name, 
+        email: email
     })
     newUser.save()
         .then(() => res.json({
